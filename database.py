@@ -84,7 +84,7 @@ def search(roll_no):
 
 
 def display_all():
-    command="select * from student "
+    command="select * from student order by roll_no"
     result=cursor.execute(command)
     r=result.fetchall()
     if r:
