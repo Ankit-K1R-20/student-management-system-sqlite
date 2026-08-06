@@ -1,7 +1,7 @@
 # Student Management System (SQLite)
 
 ## Description:
-I built this  to strengthen my understanding of Object-Oriented Programming (OOP) and SQLite by developing a command-line Student Management System built with Python and SQLite that allows users to manage student records through CRUD operations.
+I built this  to strengthen my understanding and get more comfortable with  Object-Oriented Programming (OOP) and SQLite by developing a command-line Student Management System built with Python and SQLite that allows users to manage student records through CRUD operations.
 
 ## Features
 
