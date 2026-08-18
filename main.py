@@ -21,9 +21,33 @@ while(True):
     else:
         match ch:
             case 1:
-                name=input("Enter student name : ")
-                roll_no=int(input("\nEnter the Roll.No of the student : "))
-                marks=int(input("\nEnter the marks of the student : "))
+                while True:
+                    name=input("Enter student name : ")
+                    name=name.strip()
+                    if not name:
+                        print("Name cannot be empty")
+                        continue
+                    break
+                while True:
+                    try:
+                        roll_no=int(input("\nEnter the Roll.No of the student : "))
+                    except ValueError:
+                        print("Enter only integer ")
+                        continue
+                    if roll_no <=0:
+                        print("Enter only positive number only")
+                        continue
+                    break
+                while True:
+                    try:
+                        marks=int(input("\nEnter the marks of the student : "))
+                    except ValueError:
+                        print("Enter only integer only")
+                        continue
+                    if marks <0 or marks >100:
+                        print("marks should be between 0 to 100 ")
+                        continue
+                    break
                 stu1=Student(name,roll_no,marks)
                 sms.add_student(stu1)
             case 2:
