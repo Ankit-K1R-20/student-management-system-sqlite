@@ -58,7 +58,7 @@ while(True):
                         print("Roll.No Should be an Integer ")
                         continue
                     if roll_no<=0 :
-                        print("Roll.No Should be a Positive Integer")
+                        print("Roll.No Should be a Positive Integer !!")
                         continue
                     break
                 sms.search_student(roll_no)
