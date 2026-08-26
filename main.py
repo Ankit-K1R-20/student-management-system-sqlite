@@ -51,8 +51,17 @@ while(True):
                 stu1=Student(name,roll_no,marks)
                 sms.add_student(stu1)
             case 2:
-                r=int(input("Enter the Roll.no of student to be search : "))
-                sms.search_student(r)
+                while True:
+                    try:
+                        roll_no=int(input("Enter the Roll.no of student to be search : "))
+                    except ValueError:
+                        print("Roll.No Should be an Integer ")
+                        continue
+                    if roll_no<=0 :
+                        print("Roll.No Should be a Positive Integer !!")
+                        continue
+                    break
+                sms.search_student(roll_no)
             case 3:
                 sms.display_all_students()
             case 4:
